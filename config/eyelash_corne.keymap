@@ -64,10 +64,10 @@
 
         base {
             bindings = <
-&trans              &kp Q           &kp W           &kp F             &kp P             &kp B                          &trans          &kp J      &kp L                   &kp U        &kp Y           &kp SEMI        &trans
+&kp GRAVE           &kp Q           &kp W           &kp F             &kp P             &kp B                          &trans          &kp J      &kp L                   &kp U        &kp Y           &kp SEMI        &trans
 &mt LEFT_SHIFT TAB  &mt LEFT_GUI A  &mt LEFT_ALT R  &mt LCTRL S       &mt LEFT_SHIFT T  &kp G                  &trans  &trans  &trans  &kp M      &mt LEFT_SHIFT N        &mt LCTRL E  &mt LEFT_ALT I  &mt LEFT_GUI O  &trans
 &kp LGUI            &kp Z           &kp X           &kp C             &kp D             &kp V        &trans            &trans          &kp K      &kp H                   &kp COMMA    &kp DOT         &kp FSLH        &trans
-                                                    &mt LCTRL ESCAPE  &mt LCTRL SPACE   &lt 1 SPACE                                    &lt 2 RET  &mt LEFT_ALT BACKSPACE  &trans
+                                                    &mt LCTRL ESCAPE  &mt LCTRL SPACE   &lt 1 SPACE                                    &lt 2 RET  &mt LEFT_ALT BACKSPACE  &tog 5
             >;
 
             sensor-bindings = <&inc_dec_kp 0 0>;
@@ -76,7 +76,7 @@
         nav {
             display-name = "NUMBER";
             bindings = <
-&trans  &kp N1           &kp N2          &kp N3        &kp N4        &kp N5                                         &mmv MOVE_UP                     &kp K_REDO       &kp K_PASTE  &kp K_COPY     &kp K_CUT     &kp K_UNDO  &kp BSPC
+&trans  &kp F1           &kp F2          &kp N3        &kp N4        &kp N5                                         &mmv MOVE_UP                     &kp K_REDO       &kp K_PASTE  &kp K_COPY     &kp K_CUT     &kp K_UNDO  &kp BSPC
 &trans  &bt BT_CLR_ALL   &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3                   &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp CAPSLOCK     &kp LEFT     &kp DOWN       &kp UP_ARROW  &kp RIGHT   &kp PG_UP
 &trans  &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &trans        &trans        &rgb_ug RGB_EFF  &kp C_MUTE                    &mmv MOVE_DOWN                   &rgb_ug RGB_EFR  &kp HOME     &kp PAGE_DOWN  &kp PAGE_UP   &kp END     &kp PG_DN
                                          &trans        &trans        &trans                                                                          &kp INS          &kp DEL      &trans
@@ -119,6 +119,17 @@
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+        };
+
+        gaming {
+            bindings = <
+&trans              &kp Q  &kp W  &kp F             &kp P            &kp B                          &trans          &kp J      &kp L                   &kp U        &kp Y           &kp SEMI        &trans
+&mt LEFT_SHIFT TAB  &kp A  &kp R  &kp S             &kp T            &kp G                  &trans  &trans  &trans  &kp M      &mt LEFT_SHIFT N        &mt LCTRL E  &mt LEFT_ALT I  &mt LEFT_GUI O  &trans
+&kp LGUI            &kp Z  &kp X  &kp C             &kp D            &kp V        &trans            &trans          &kp K      &kp H                   &kp COMMA    &kp DOT         &kp FSLH        &trans
+                                  &mt LCTRL ESCAPE  &mt LCTRL SPACE  &lt 1 SPACE                                    &lt 2 RET  &mt LEFT_ALT BACKSPACE  &trans
+            >;
+
+            sensor-bindings = <&inc_dec_kp 0 0>;
         };
     };
 };
