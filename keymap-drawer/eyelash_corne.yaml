@@ -93,8 +93,8 @@ layers:
   - {t: /, s: '?'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-control$$'}
-  - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-control$$'}
-  - {t: '$$mdi:keyboard-space$$', h: NUMBER}
+  - {t: '[', h: '$$mdi:apple-keyboard-option$$', s: '{'}
+  - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '$$mdi:keyboard-return$$', h: SYMBOL}
   - {t: '$$mdi:backspace$$', h: '$$mdi:apple-keyboard-option$$'}
   - {t: base, h: toggle}
@@ -294,3 +294,6 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+combos:
+- p: [1, 2]
+  k: '}'
