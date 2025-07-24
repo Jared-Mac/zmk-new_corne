@@ -50,7 +50,7 @@ layers:
   - {t: '$$mdi:backspace$$', h: '$$mdi:apple-keyboard-option$$'}
   - {t: gaming, h: toggle}
   gaming:
-  - {t: '$$mdi:transfer$$', type: trans}
+  - F23
   - Q
   - W
   - F
@@ -63,7 +63,7 @@ layers:
   - Y
   - {t: ;, s: ':'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: '$$mdi:keyboard-tab$$', h: F19}
   - A
   - R
   - S
@@ -78,13 +78,13 @@ layers:
   - {t: I, h: '$$mdi:apple-keyboard-option$$'}
   - {t: O, h: '$$mdi:apple-keyboard-command$$'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - LGUI
+  - F24
   - Z
   - X
   - C
   - D
   - V
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:keyboard-esc$$
   - {t: '$$mdi:transfer$$', type: trans}
   - K
   - H
@@ -92,9 +92,9 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-control$$'}
+  - {t: ']', h: '$$mdi:apple-keyboard-shift$$', s: '}'}
   - {t: '[', h: '$$mdi:apple-keyboard-option$$', s: '{'}
-  - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', h: SYMBOL}
   - {t: '$$mdi:backspace$$', h: '$$mdi:apple-keyboard-option$$'}
   - {t: base, h: toggle}
