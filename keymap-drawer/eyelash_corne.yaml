@@ -297,3 +297,12 @@ layers:
 combos:
 - p: [1, 2]
   k: '}'
+- p: [15, 17]
+  k: F18
+  l: [gaming]
+- p: [15, 17, 16]
+  k: F17
+  l: [gaming]
+- p: [15, 3, 17]
+  k: F16
+  l: [gaming]
