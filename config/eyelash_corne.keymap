@@ -33,6 +33,15 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
         };
+
+        td_esc: td_esc {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_ESC";
+            #binding-cells = <0>;
+            bindings = <&kp NUMBER_3>, <&kp ESC>;
+
+            tapping-term-ms = <200>;
+        };
     };
 
     rgb_encoder: rgb_encoder {
@@ -68,19 +77,19 @@
         };
 
         backpedal {
-            bindings = <&kp F18>;
+            bindings = <&kp NUMBER_0>;
             key-positions = <15 17>;
             layers = <1>;
         };
 
         autorun {
-            bindings = <&kp F17>;
+            bindings = <&kp NUMBER_4>;
             key-positions = <15 17 16>;
             layers = <1>;
         };
 
         mount {
-            bindings = <&kp F16>;
+            bindings = <&kp NUMBER_5>;
             key-positions = <15 3 17>;
             layers = <1>;
         };
@@ -102,10 +111,10 @@
 
         gaming {
             bindings = <
-&kp F23      &kp Q  &kp W  &kp F                         &kp P                      &kp B                         &trans          &kp J      &kp L                   &kp U        &kp Y           &kp SEMI        &trans
-&mt F19 TAB  &kp A  &kp R  &kp S                         &kp T                      &kp G                 &trans  &trans  &trans  &kp M      &mt LEFT_SHIFT N        &mt LCTRL E  &mt LEFT_ALT I  &mt LEFT_GUI O  &trans
-&kp F24      &kp Z  &kp X  &kp C                         &kp D                      &kp V      &kp ESC            &trans          &kp K      &kp H                   &kp COMMA    &kp DOT         &kp FSLH        &trans
-                           &mt LEFT_SHIFT RIGHT_BRACKET  &mt LEFT_ALT LEFT_BRACKET  &kp SPACE                                     &lt 4 RET  &mt LEFT_ALT BACKSPACE  &to 0
+&kp NUMBER_1      &kp Q  &kp W  &kp F                         &kp P                      &kp B                         &trans          &kp J      &kp L                   &kp U        &kp Y           &kp SEMI        &trans
+&mt NUMBER_2 TAB  &kp A  &kp R  &kp S                         &kp T                      &kp G                 &trans  &trans  &trans  &kp M      &mt LEFT_SHIFT N        &mt LCTRL E  &mt LEFT_ALT I  &mt LEFT_GUI O  &trans
+&td_esc           &kp Z  &kp X  &kp C                         &kp D                      &kp V      &kp ESC            &trans          &kp K      &kp H                   &kp COMMA    &kp DOT         &kp FSLH        &trans
+                                &mt LEFT_SHIFT RIGHT_BRACKET  &mt LEFT_ALT LEFT_BRACKET  &kp SPACE                                     &lt 4 RET  &mt LEFT_ALT BACKSPACE  &to 0
             >;
 
             sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
