@@ -50,7 +50,7 @@ layers:
   - {t: '$$mdi:backspace$$', h: '$$mdi:apple-keyboard-option$$'}
   - {t: gaming, h: toggle}
   gaming:
-  - '1'
+  - '&td_1'
   - Q
   - W
   - F
@@ -63,7 +63,7 @@ layers:
   - Y
   - {t: ;, s: ':'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:keyboard-tab$$', h: '2'}
+  - '&td_2'
   - A
   - R
   - S
