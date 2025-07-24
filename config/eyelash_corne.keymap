@@ -66,6 +66,24 @@
             bindings = <&kp RIGHT_BRACE>;
             key-positions = <1 2>;
         };
+
+        backpedal {
+            bindings = <&kp F18>;
+            key-positions = <15 17>;
+            layers = <1>;
+        };
+
+        autorun {
+            bindings = <&kp F17>;
+            key-positions = <15 17 16>;
+            layers = <1>;
+        };
+
+        mount {
+            bindings = <&kp F16>;
+            key-positions = <15 3 17>;
+            layers = <1>;
+        };
     };
 
     keymap {
