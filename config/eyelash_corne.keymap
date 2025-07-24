@@ -42,6 +42,20 @@
 
             tapping-term-ms = <200>;
         };
+
+        td_1: td_1 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_1";
+            #binding-cells = <0>;
+            bindings = <&kp NUMBER_1>, <&kp EXCL>;
+        };
+
+        td_2: td_2 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_2";
+            #binding-cells = <0>;
+            bindings = <&kp NUMBER_2>, <&kp AT>;
+        };
     };
 
     rgb_encoder: rgb_encoder {
