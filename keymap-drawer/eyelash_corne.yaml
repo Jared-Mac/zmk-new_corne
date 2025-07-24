@@ -50,7 +50,7 @@ layers:
   - {t: '$$mdi:backspace$$', h: '$$mdi:apple-keyboard-option$$'}
   - {t: gaming, h: toggle}
   gaming:
-  - F23
+  - '1'
   - Q
   - W
   - F
@@ -63,7 +63,7 @@ layers:
   - Y
   - {t: ;, s: ':'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:keyboard-tab$$', h: F19}
+  - {t: '$$mdi:keyboard-tab$$', h: '2'}
   - A
   - R
   - S
@@ -78,7 +78,7 @@ layers:
   - {t: I, h: '$$mdi:apple-keyboard-option$$'}
   - {t: O, h: '$$mdi:apple-keyboard-command$$'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - F24
+  - '&td_esc'
   - Z
   - X
   - C
@@ -298,11 +298,11 @@ combos:
 - p: [1, 2]
   k: '}'
 - p: [15, 17]
-  k: F18
+  k: '0'
   l: [gaming]
 - p: [15, 17, 16]
-  k: F17
+  k: '4'
   l: [gaming]
 - p: [15, 3, 17]
-  k: F16
+  k: '5'
   l: [gaming]
