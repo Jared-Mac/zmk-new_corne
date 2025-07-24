@@ -84,13 +84,13 @@
 
         gaming {
             bindings = <
-&trans              &kp Q  &kp W  &kp F             &kp P                      &kp B                                   &trans          &kp J      &kp L                   &kp U        &kp Y           &kp SEMI        &trans
-&mt LEFT_SHIFT TAB  &kp A  &kp R  &kp S             &kp T                      &kp G                           &trans  &trans  &trans  &kp M      &mt LEFT_SHIFT N        &mt LCTRL E  &mt LEFT_ALT I  &mt LEFT_GUI O  &trans
-&kp LGUI            &kp Z  &kp X  &kp C             &kp D                      &kp V                 &trans            &trans          &kp K      &kp H                   &kp COMMA    &kp DOT         &kp FSLH        &trans
-                                  &mt LCTRL ESCAPE  &mt LEFT_ALT LEFT_BRACKET  &mt LEFT_SHIFT SPACE                                    &lt 4 RET  &mt LEFT_ALT BACKSPACE  &to 0
+&kp F23      &kp Q  &kp W  &kp F                         &kp P                      &kp B                         &trans          &kp J      &kp L                   &kp U        &kp Y           &kp SEMI        &trans
+&mt F19 TAB  &kp A  &kp R  &kp S                         &kp T                      &kp G                 &trans  &trans  &trans  &kp M      &mt LEFT_SHIFT N        &mt LCTRL E  &mt LEFT_ALT I  &mt LEFT_GUI O  &trans
+&kp F24      &kp Z  &kp X  &kp C                         &kp D                      &kp V      &kp ESC            &trans          &kp K      &kp H                   &kp COMMA    &kp DOT         &kp FSLH        &trans
+                           &mt LEFT_SHIFT RIGHT_BRACKET  &mt LEFT_ALT LEFT_BRACKET  &kp SPACE                                     &lt 4 RET  &mt LEFT_ALT BACKSPACE  &to 0
             >;
 
-            sensor-bindings = <&inc_dec_kp 0 0>;
+            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
         };
 
         default_layer {
