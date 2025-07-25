@@ -84,7 +84,7 @@ layers:
   - C
   - D
   - V
-  - $$mdi:keyboard-esc$$
+  - {t: '`', s: '~'}
   - {t: '$$mdi:transfer$$', type: trans}
   - K
   - H
