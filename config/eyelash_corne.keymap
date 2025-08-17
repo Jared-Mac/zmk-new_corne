@@ -121,7 +121,7 @@
             bindings = <
 &kp GRAVE           &kp Q           &kp W           &kp F             &kp P             &kp B                          &trans          &kp J      &kp L                   &kp U        &kp Y           &kp SEMI        &trans
 &mt LEFT_SHIFT TAB  &mt LEFT_GUI A  &mt LEFT_ALT R  &mt LCTRL S       &mt LEFT_SHIFT T  &kp G                  &trans  &trans  &trans  &kp M      &mt LEFT_SHIFT N        &mt LCTRL E  &mt LEFT_ALT I  &mt LEFT_GUI O  &kp SQT
-&kp LGUI            &kp Z           &kp X           &kp C             &kp D             &kp V        &trans            &trans          &kp K      &kp H                   &kp COMMA    &kp DOT         &kp FSLH        &trans
+&kp LGUI            &kp Z           &kp X           &kp C             &kp D             &kp V        &trans            &trans          &kp K      &kp H                   &kp COMMA    &kp DOT         &kp FSLH        &kp DELETE
                                                     &mt LCTRL ESCAPE  &mt LCTRL SPACE   &lt 3 SPACE                                    &lt 4 RET  &mt LEFT_ALT BACKSPACE  &to 1
             >;
 
