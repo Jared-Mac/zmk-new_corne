@@ -119,7 +119,7 @@
 
         base {
             bindings = <
-&kp GRAVE           &kp Q           &kp W           &kp F             &kp P             &kp B                          &trans          &kp J      &kp L                   &kp U        &kp Y           &kp SEMI        &trans
+&kp GRAVE           &kp Q           &kp W           &kp F             &kp P             &kp B                          &trans          &kp J      &kp L                   &kp U        &kp Y           &kp SEMI        &kp DOUBLE_QUOTES
 &mt LEFT_SHIFT TAB  &mt LEFT_GUI A  &mt LEFT_ALT R  &mt LCTRL S       &mt LEFT_SHIFT T  &kp G                  &trans  &trans  &trans  &kp M      &mt LEFT_SHIFT N        &mt LCTRL E  &mt LEFT_ALT I  &mt LEFT_GUI O  &kp SQT
 &kp LGUI            &kp Z           &kp X           &kp C             &kp D             &kp V        &trans            &trans          &kp K      &kp H                   &kp COMMA    &kp DOT         &kp FSLH        &kp DELETE
                                                     &mt LCTRL ESCAPE  &mt LCTRL SPACE   &lt 3 SPACE                                    &lt 4 RET  &mt LEFT_ALT BACKSPACE  &to 1
@@ -167,7 +167,7 @@
             display-name = "SYMBOL";
             bindings = <
 &trans  &kp HASH    &kp N7  &kp N8  &kp N9  &kp AT                                 &mmv MOVE_UP                     &kp CARET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp ASTRK  &kp AMPS  &kp BSPC
-&trans  &bt BT_CLR  &kp N4  &kp N5  &kp N6  &kp EXCL               &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp MINUS  &kp EQUAL             &kp LBKT               &kp RBKT   &kp BSLH  &kp GRAVE
+&trans  &kp DOLLAR  &kp N4  &kp N5  &kp N6  &kp EXCL               &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp MINUS  &kp EQUAL             &kp LBKT               &kp RBKT   &kp BSLH  &kp GRAVE
 &trans  &kp N0      &kp N1  &kp N2  &kp N3  &kp PERCENT  &trans                    &mmv MOVE_DOWN                   &kp UNDER  &kp PLUS              &kp LBRC               &kp RBRC   &kp PIPE  &kp TILDE
                             &trans  &trans  &kp SPACE                                                               &kp RET    &trans                &trans
             >;
