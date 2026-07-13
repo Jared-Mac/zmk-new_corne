@@ -14,7 +14,7 @@ layers:
   - Y
   - {t: ;, s: ':'}
   - '"'
-  - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - $$mdi:keyboard-tab$$
   - {t: A, h: '$$mdi:apple-keyboard-command$$'}
   - {t: R, h: '$$mdi:apple-keyboard-option$$'}
   - {t: S, h: '$$mdi:apple-keyboard-control$$'}
@@ -29,7 +29,7 @@ layers:
   - {t: I, h: '$$mdi:apple-keyboard-option$$'}
   - {t: O, h: '$$mdi:apple-keyboard-command$$'}
   - {t: '''', s: '"'}
-  - Fn
+  - $$mdi:apple-keyboard-shift$$
   - Z
   - X
   - C
@@ -44,13 +44,13 @@ layers:
   - {t: /, s: '?'}
   - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-control$$'}
-  - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-control$$'}
-  - {t: '$$mdi:keyboard-space$$', h: NUMBER}
+  - Fn
+  - {t: '$$mdi:keyboard-space$$', h: NAV}
   - {t: '$$mdi:keyboard-return$$', h: SYMBOL}
   - {t: '$$mdi:backspace$$', h: '$$mdi:apple-keyboard-option$$'}
-  - {t: gaming, h: toggle}
+  - $$mdi:backspace-reverse-outline$$
   gaming:
-  - '&td_1'
+  - {t: '1', s: '!'}
   - Q
   - W
   - F
@@ -63,7 +63,7 @@ layers:
   - Y
   - {t: ;, s: ':'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&td_2'
+  - {t: '2', s: '@'}
   - A
   - R
   - S
@@ -73,12 +73,12 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - M
-  - {t: N, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: E, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: I, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: O, h: '$$mdi:apple-keyboard-command$$'}
+  - N
+  - E
+  - I
+  - O
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:apple-keyboard-control$$
   - Z
   - X
   - C
@@ -92,13 +92,13 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: ']', h: '$$mdi:apple-keyboard-shift$$', s: '}'}
-  - {t: '[', h: '$$mdi:apple-keyboard-option$$', s: '{'}
+  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:apple-keyboard-option$$
   - $$mdi:keyboard-space$$
-  - {t: '$$mdi:keyboard-return$$', h: SYMBOL}
-  - {t: '$$mdi:backspace$$', h: '$$mdi:apple-keyboard-option$$'}
-  - {t: base, h: toggle}
-  NUMBER:
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - $$mdi:keyboard-esc$$
+  NAV:
   - {t: '$$mdi:transfer$$', type: trans}
   - F1
   - F2
@@ -107,13 +107,13 @@ layers:
   - {t: '5', s: '%'}
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - REDO
-  - PASTE
-  - COPY
-  - CUT
   - UNDO
+  - CUT
+  - COPY
+  - PASTE
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:transfer$$', type: trans}
-  - BT CLR ALL
+  - {t: '$$mdi:transfer$$', type: trans}
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
   - {h: '2', s: '$$mdi:bluetooth-connect$$'}
   - {h: '3', s: '$$mdi:bluetooth-connect$$'}
@@ -140,7 +140,7 @@ layers:
   - PgDn
   - PgUp
   - END
-  - PG DN
+  - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
@@ -211,8 +211,8 @@ layers:
   - F4
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:progress-download$$
-  - {t: '$$mdi:backup-restore$$', type: bootloader}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - PRINTSCREEN
   - $$mdi:mouse-scroll-wheel$$
   - '&mkp MB4'
@@ -225,7 +225,7 @@ layers:
   - F7
   - F8
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -240,7 +240,7 @@ layers:
   - F12
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -259,3 +259,18 @@ combos:
   l: [gaming]
 - p: [13, 28]
   k: {t: ',', s: <}
+- p: [42, 47]
+  k: {t: gaming, h: toggle}
+  l: [base]
+- p: [42, 47]
+  k: {t: base, h: toggle}
+  l: [gaming]
+- p: [0, 12]
+  k: {t: '$$mdi:backup-restore$$', type: bootloader}
+  l: [Fn]
+- p: [13, 27]
+  k: $$mdi:progress-download$$
+  l: [Fn]
+- p: [28, 41]
+  k: BT CLR ALL
+  l: [Fn]
