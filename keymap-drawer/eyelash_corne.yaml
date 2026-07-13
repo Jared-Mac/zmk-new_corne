@@ -29,7 +29,7 @@ layers:
   - {t: I, h: '$$mdi:apple-keyboard-option$$'}
   - {t: O, h: '$$mdi:apple-keyboard-command$$'}
   - {t: '''', s: '"'}
-  - LGUI
+  - Fn
   - Z
   - X
   - C
@@ -78,7 +78,7 @@ layers:
   - {t: I, h: '$$mdi:apple-keyboard-option$$'}
   - {t: O, h: '$$mdi:apple-keyboard-command$$'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&td_esc'
+  - {t: '$$mdi:transfer$$', type: trans}
   - Z
   - X
   - C
@@ -98,55 +98,6 @@ layers:
   - {t: '$$mdi:keyboard-return$$', h: SYMBOL}
   - {t: '$$mdi:backspace$$', h: '$$mdi:apple-keyboard-option$$'}
   - {t: base, h: toggle}
-  QWERTY:
-  - $$mdi:keyboard-tab$$
-  - Q
-  - W
-  - E
-  - R
-  - T
-  - $$mdi:arrow-up-bold$$
-  - Y
-  - U
-  - I
-  - O
-  - P
-  - {t: '$$mdi:backspace$$', type: backspace}
-  - '&td0'
-  - A
-  - S
-  - D
-  - F
-  - G
-  - $$mdi:arrow-left-bold$$
-  - {t: '$$mdi:keyboard-return$$', type: enter}
-  - $$mdi:arrow-right-bold$$
-  - H
-  - J
-  - K
-  - L
-  - {t: ;, s: ':'}
-  - {t: '''', s: '"'}
-  - $$mdi:apple-keyboard-control$$
-  - Z
-  - X
-  - C
-  - V
-  - B
-  - $$mdi:keyboard-space$$
-  - $$mdi:arrow-down-bold$$
-  - N
-  - M
-  - {t: ',', s: <}
-  - {t: ., s: '>'}
-  - {t: /, s: '?'}
-  - $$mdi:keyboard-esc$$
-  - LGUI
-  - NUMBER
-  - {t: '$$mdi:keyboard-space$$', h: base}
-  - {t: '$$mdi:keyboard-return$$', h: base}
-  - SYMBOL
-  - $$mdi:apple-keyboard-option$$
   NUMBER:
   - {t: '$$mdi:transfer$$', type: trans}
   - F1
@@ -191,7 +142,7 @@ layers:
   - END
   - PG DN
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held alternate}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - INS
   - $$mdi:backspace-reverse-outline$$
@@ -243,7 +194,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: held}
-  - {type: held alternate}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   Fn:
   - '&studio_unlock'
@@ -274,10 +225,10 @@ layers:
   - $$mdi:mouse-right-click-outline$$
   - PRINTSCREEN
   - F12
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:backup-restore$$', type: bootloader}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:progress-download$$
+  - {type: held}
+  - A
+  - F1
+  - F2
   - {t: '$$mdi:transfer$$', type: trans}
   - '&mkp MB5'
   - $$mdi:volume-off$$
